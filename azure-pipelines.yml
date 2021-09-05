@@ -42,11 +42,11 @@ steps:
       command: "restore"
       projects: "**/*.csproj"
 
-  - template: /build/pipeline-build.yml
+  - template: /templates/pipeline-build.yml
     parameters:
       buildConfiguration: "Debug"
 
-  - template: /build/pipeline-build.yml
+  - template: /templates/pipeline-build.yml
     parameters:
       buildConfiguration: "Release"
 
